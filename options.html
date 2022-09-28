@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/option.css">
+    <!-- La barre de volume de notification -->
+    <script defer src='./script.js'></script>
+</head>
+<body>
+    <!-- Extension head-->
+    <header>
+        <!-- Logo -->
+        <div class="logoExt">
+            <img src="/images/get_started128.png" alt="twitch channel logo">
+        </div>
+        <!-- Settings -->
+        <div class="settingsExt">
+            <a href="/popup.html" class="stgButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-x" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+    <!-- Partie paramètres -->
+    <main>
+        <section>
+            <article>
+                <div class="notifButtons">
+                    <button class="alignBtn">
+                        <div>
+                            <span id="toggleButtons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-toggle2-off" viewBox="0 0 16 16">
+                                    <path d="M9 11c.628-.836 1-1.874 1-3a4.978 4.978 0 0 0-1-3h4a3 3 0 1 1 0 6H9z"/>
+                                    <path d="M5 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0 1A5 5 0 1 0 5 3a5 5 0 0 0 0 10z"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div>
+                            <p>Notifications Lives Twitch</p>
+                        </div>
+                    </button>
+                    <button class="alignBtn">
+                        <div>
+                            <span id="toggleButtons">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-toggle2-off" viewBox="0 0 16 16">
+                                    <path d="M9 11c.628-.836 1-1.874 1-3a4.978 4.978 0 0 0-1-3h4a3 3 0 1 1 0 6H9z"/>
+                                    <path d="M5 12a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm0 1A5 5 0 1 0 5 3a5 5 0 0 0 0 10z"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div>
+                            <p>Notifications vid&eacute;os Youtube</p>
+                        </div>
+                    </button>
+                </div>
+            </article>
+            <article>
+                <h3>Volume</h3>
+                <div id='wrapper'>
+                    <div id='index' draggable="true"></div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
