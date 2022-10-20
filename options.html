@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="/option.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- La barre de volume de notification -->
     <script defer src='./volume-bar.js'></script>
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self';" 
+    />
+
 </head>
 <body>
     <!-- Extension head-->
     <header>
         <!-- Logo -->
         <div class="logoExt">
-            <img src="/images/get_started128.png" alt="twitch channel logo">
         </div>
         <!-- Settings -->
         <div class="settingsExt">
@@ -41,7 +41,7 @@
                 <div class="notifButtons">
                     <div class="alignBtn">
                         <div>
-                            <label class="switch">
+                            <label id="twitch-sound-alert" class="switch">
                                 <input type="checkbox">
                                 <span class="slider round"></span>
                             </label>
@@ -53,7 +53,7 @@
                     <div class="alignBtn">
                         <div>
                             <label class="switch">
-                                <input type="checkbox">
+                                <input id="youtube-sound-alert" type="checkbox">
                                 <span class="slider round"></span>
                             </label>
                         </div>
@@ -84,7 +84,7 @@
             </article>
         </section>
     </main>
-    <!-- Scripts -->
-    <script src="/option.js"></script>
+
+    <script src="/popup.js"></script>
 </body>
 </html>

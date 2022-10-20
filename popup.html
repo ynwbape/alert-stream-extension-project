@@ -2,23 +2,21 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="/popup.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self';" 
+    />
 </head>
 <body>
     <!-- Extension head-->
     <header>
         <!-- Logo -->
         <div class="logoExt">
-            <img src="/images/get_started128.png" alt="twitch channel logo">
+            
         </div>
-        <!-- Username -->
-        <div class="flexName">
-            <div class="usernameExt">
-                <img src="/images/Google_2011_logo.png" alt="twitch channel username">
-            </div>
-        </div>
+        <!-- Bouton qui ouvre la page twitch du streamer -->
+        <button class="notifToTwitchLink">
+            <a target="_blank" href="https://www.twitch.tv/amaazz" class="linkToStream">Amaazz</a>
+        </button>
         <!-- Settings -->
         <div class="settingsExt">
             <a href="/options.html" class="stgButton">
@@ -69,6 +67,7 @@
             </article>
         </section>
     </main>
+    <!-- Réseaux Sociaux -->
     <footer>
         <nav>
             <!-- Twitter -->
@@ -98,7 +97,6 @@
             </a>
         </nav>
     </footer>
-
     <!-- Mes Scripts -->
     <script src="/popup.js"></script>
 </body>
